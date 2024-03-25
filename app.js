@@ -1,20 +1,18 @@
-var students = {
-  name1: "waqas",
-  rollNumber: 415,
-  course: "html",
-  institute: "smit",
-};
+// var students = {
+//   name1: "waqas",
+//   rollNumber: 415,
+//   course: "html",
+//   institute: "smit",
+// };
 
-function addStudent(name1, rollNumber, course, institute) {
+function addStudent() {
   return {
-    name1: name1,
-    rollNumber: rollNumber,
-    course: course,
-    institute: institute,
+    name1: prompt("enter your name"),
+    rollNumber: parseInt(prompt("enter your roll number")),
+    course: prompt("enter your course"),
+    institute: prompt("enter your institute"),
   };
 }
-var showStudent = [
-  addStudent("waqas", 42, "js", "smit"),
-  addStudent("munir", 45, "css", "smit"),
-];
+var showStudent = [addStudent()];
+
 console.log(showStudent);
