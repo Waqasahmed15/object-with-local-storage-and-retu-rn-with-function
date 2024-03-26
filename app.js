@@ -13,5 +13,4 @@ function addStudent() {
     institute: prompt("enter your institute"),
   };
   showStudent.push(std);
-  console.log(showStudent);
 }
