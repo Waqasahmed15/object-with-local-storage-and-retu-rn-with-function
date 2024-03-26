@@ -5,6 +5,8 @@
 //   institute: "smit",
 // };
 var showStudent = [];
+var prstudent = localStorage.getItem("student");
+console.log(JSON.parse(prstudent));
 function addStudent() {
   var std = {
     name1: prompt("enter your name"),
@@ -13,4 +15,5 @@ function addStudent() {
     institute: prompt("enter your institute"),
   };
   showStudent.push(std);
+  localStorage.setItem("student", JSON.stringify(showStudent));
 }
